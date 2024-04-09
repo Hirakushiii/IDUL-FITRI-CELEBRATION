@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+    --fontParagraf: "Unna", serif;
+    --FontScript: "Charm", cursive;
+}
+body{
+    overflow-x: hidden;
+    color: white;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(173, 130, 50);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+.home{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.home h1{
+    font-family: var(--FontScript);
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 10rem 0 0 0;
+    word-spacing: 2px;
+    color: chocolate;
+}
+.home p{
+    margin: 0 auto;
+    width: 60%;
+    font-family: var(--fontParagraf);
+    font-size: .7rem;
+    font-weight: 400;
+}
+.home h3{
+    font-size: 2.5rem;
+    letter-spacing: .4rem;
+}
+.home aside ul li{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 960px) {
+    .home h1{
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }.home p{
+        width: 90%;
+        font-size: .6rem;
+    }.home aside ul li{
+        margin: 0 0 0 -25px;
+    }
+}
